@@ -1,0 +1,30 @@
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7fb;
+  }
+  
+  /* LEFT SIDEBAR */
+  .sidebar {
+    width: 260px;
+    background: linear-gradient(180deg, #4f46e5, #4338ca);
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* MAIN CONTENT */
+  .main-content {
+    flex: 1;
+    padding: 24px 40px;
+    overflow-y: auto;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  

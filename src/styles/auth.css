@@ -1,0 +1,38 @@
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .auth-card {
+    background: white;
+    width: 420px;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    text-align: center;
+  }
+  
+  .auth-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .auth-card button {
+    width: 100%;
+    padding: 12px;
+    background: #5f5cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .google-btn {
+    margin: 15px 0;
+  }
+  

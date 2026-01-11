@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# 🧩 To-Do List Application – Frontend (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Project Overview
+This repository contains the **frontend implementation** of a **full-stack To-Do List application** developed as part of **HCL Training / Evaluation**.  
+The frontend is built using **React.js** and focuses on **clean UI, smooth user experience, and real-world application behavior**.
 
-## Available Scripts
+The application interacts with a **Spring Boot backend** through REST APIs to handle authentication and task management.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 Purpose (For HCL Evaluation Panel)
+This project demonstrates:
+- Practical **React.js skills**
+- Understanding of **component-based architecture**
+- Handling **authentication-based flows**
+- Real-time UI updates using **API integration**
+- Professional UI/UX practices expected in enterprise applications
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🖥️ Features Implemented
 
-### `npm test`
+### 🔐 Authentication UI
+- User **Login & Registration**
+- Google OAuth Login (UI integration)
+- Secure session-based navigation
+- Automatic redirect on logout
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✅ Task Management UI
+- Add new tasks with:
+  - Description
+  - Priority (Urgent / Normal / Do when time allows)
+  - Status (Not Started / In Progress / Done / Missed Deadline)
+  - Deadline
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as **Done**
+- Real-time UI refresh after every action
 
-### `npm run build`
+### 🔍 Filters & Sorting
+- Filter tasks by:
+  - Priority
+  - Status
+- Sort tasks by:
+  - Priority
+  - Status
+  - Deadline
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🎨 UI / UX Enhancements
+- Sidebar-based professional layout
+- Clean task cards with badges
+- Color-coded priorities and statuses
+- Responsive and user-friendly design
+- Clear visual separation of actions (Edit / Done / Delete)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧰 Tech Stack (Frontend)
 
-### `npm run eject`
+| Technology | Purpose |
+|----------|--------|
+| **React.js** | UI Development |
+| **JavaScript (ES6+)** | Logic |
+| **Axios** | API Communication |
+| **React Router** | Navigation |
+| **CSS3** | Styling & Layout |
+| **Google OAuth** | Login UI |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📂 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+src/
+├── api/ # Axios configuration
+├── auth/ # Login & Register pages
+├── components/ # Navbar, Sidebar
+├── dashboard/ # Dashboard & Task components
+├── styles/ # CSS files
+├── App.js
+└── index.js
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🔗 Backend Integration
+This frontend communicates with a **Spring Boot backend** using REST APIs for:
+- Authentication
+- Task CRUD operations
+- Session management
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👉 **Backend Repository:**  
+(https://github.com/Premkumar981/To-do_backend)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🚀 How to Run Frontend Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm
 
-### Analyzing the Bundle Size
+### Steps
+```bash
+git clone https://github.com/Premkumar981/to-do_frontend.git
+cd to-do-frontend
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Frontend will start at:
+```bash
+http://localhost:3000
+```
 
-### Making a Progressive Web App
+## 🧠 Key Learning Outcomes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- End-to-end frontend development with React
+- API-driven UI design
+- Handling authentication-based routing
+- Building production-style dashboards
+- Writing clean, maintainable UI code
 
-### Advanced Configuration
+## 👨‍💻 Developed By
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Prem Kumar<br>
+HCL Training – Full Stack Java<br>
+(To-Do List Assignment Project)<br>
 
-### Deployment
+## 🔮 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- UI animations and transitions
+- Dark mode support
+- Task search
